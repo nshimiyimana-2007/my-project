@@ -1,0 +1,111 @@
+ body {
+  font-family: Arial, sans-serif;
+  background:rgb(109, 107, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: right;
+}
+.container {
+  background:rgb(255, 253, 253);
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgb(15, 15, 15);
+}
+h1{
+  background-color: #19191a;
+  color: white;
+  padding: 10%;
+}
+label{
+  text-align: top;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  font-size: 16px;
+}
+label{
+    text-align: center;
+}
+button {
+  background-color: #19191a;
+  color: rgb(253, 252, 252);
+  border: none;
+  flex:1%;
+  cursor: pointer;
+  text-align: right-down;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0074a2;
+  
+}
+
+#result {
+  margin-block-end: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #19191a;
+  text-align: right;
+} .calculator {
+            width: 550px;
+            background-color: #c0eec0;
+            border-radius: 15px;
+            
+            padding: 20px;
+        }
+        .display {
+            width: 90%;
+            height: 30px;
+            text-align: right;
+            font-size: 1.5rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ffffff;
+            border-radius: 8px;
+            color: #000000;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .button {
+            background-color: #03a9f4;
+            border: none;
+            font-size: 1.5rem;
+            padding: 0px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            color: rgb(83, 24, 24);
+        }
+        .button:hover {
+            background-color: #06090a;
+            transform: scale(1.1);
+        }
+        .button:active {
+            transform: scale(0.95);
+        }
+        .button.clear {
+            background-color: #ceb3ab;
+        }
+        
+        .button.equal {
+            background-color: #8bc34a;
+        }
+        
+        .button.operator {
+            background-color: #dcec4b;
+        }
+        .button.operator:hover {
+            background-color: #241d16;
+        }

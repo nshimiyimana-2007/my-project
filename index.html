@@ -1,0 +1,68 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Africa-USA Currency Converter</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <div class="container">
+    <h1>CPEC SAINT BABETH TSS</h1>
+
+    <label for="amount">Amount</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <label for="fromCurrency">From</label>
+    <select id="fromCurrency">
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="FRW">FRW - Rwandan Franc</option>
+      <option value="KES">KES - Kenyan Shilling</option>
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="GBP">GBP - British Pound</option>
+    </select>
+
+    <label for="toCurrency">To</label>
+    <select id="toCurrency">
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="FRW">FRW - Rwandan Franc</option>
+      <option value="KES">KES - Kenyan Shilling</option>
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="GBP">GBP - British Pound</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+
+    <div id="result"></div>
+</div nbsp&;nbsp&;nbsp&;nbsp&;>
+
+    <div class="calculator">
+        <label for="display">Calcuator</label>
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button operator" onclick="appendOperation('/')">/</button>
+            <button class="button operator" onclick="appendOperation('*')">*</button>
+            <button class="button operator" onclick="appendOperation('-')">-</button>
+
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="appendOperation('+')">+</button>
+
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button equal" onclick="calculate()">=</button>
+
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>
